@@ -1,21 +1,26 @@
-    function xxx(black,c){
-    const abccc = document.createElement("button");
-    document.body.appendChild(abccc)
-    abccc.style.position="absolute";
-    abccc.style.top=`${c}px`;
-    abccc.style.backgroundColor=`${black}`;
-    abccc.style.borderRadius="50%"
-    abccc.style.width="30px";
-    abccc.style.height="30px";
-    abccc.onclick = function() {
+    function color(black,c){
+    const abc = document.createElement("button");
+    document.body.appendChild(abc)
+    abc.style.position="absolute";
+    abc.style.top=`${c}px`;
+    abc.style.backgroundColor=`${black}`;
+    abc.style.borderRadius="50%"
+    abc.style.width="30px";
+    abc.style.height="30px";
+    abc.onclick = function() {
         ctx.fillStyle = `${black}`;
         ctx.strokeStyle = `${black}`;
         ctx.lineWidth = 8;
 
         }
     }
-    xxx("red",100)
-    xxx("yellow",150)
+    color("black",50)
+    color("red",100)
+    color("yellow",150)
+    color("green",200)
+    color("blue",250)
+    color("purple",300)
+    color("orange",350)
 
 // const h = document.createElement("button");
 // document.body.appendChild(h)
@@ -73,19 +78,20 @@
 // ctx.lineWidth = 8;
 
 // }
-// const c = document.createElement("button");
-// document.body.appendChild(c)
-// c.innerHTML="clear";
-// c.style.position="absolute";
-// c.style.top="500px";
-// c.style.backgroundColor="white";
-// c.style.borderRadius="50%"
-// c.style.width="50px";
-// c.style.height="50px";
-// c.onclick = function() {
-//     ctx.fillStyle = "grey";
-// ctx.lineWidth = 8;
+const c = document.createElement("button");
+document.body.appendChild(c)
+c.innerHTML="clear";
+c.style.position="absolute";
+c.style.top="500px";
+c.style.backgroundColor="white";
+c.style.borderRadius="50%"
+c.style.width="50px";
+c.style.height="50px";
+c.style.border="1px solid black";
+c.onclick = function() {
+    ctx.fillStyle = "grey";
+ctx.lineWidth = 8;
 
-//     ctx.strokeStyle = "white";
-//     ctx.lineWidth=30
-// }
+    ctx.strokeStyle = "white";
+    ctx.lineWidth=30
+}
